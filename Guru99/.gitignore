@@ -6,3 +6,8 @@
 # maven
 log/
 /target/
+
+# Intellij
+.idea/
+*.iml
+*.iws
