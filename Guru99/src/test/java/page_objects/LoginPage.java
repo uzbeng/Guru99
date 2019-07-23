@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	WebDriver driver;
 
-	@FindBy(css = "body > form > table > tbody > tr:nth-child(1) > td:nth-child(1)")
+	@FindBy(css = "h2[class='barone']")
 	WebElement usrNameBoxTitle;
 
-	@FindBy(name = "uid")
+	@FindBy(css = "table input[name='uid']")
 	WebElement usernameBox;
 
 	@FindBy(id = "message23")
@@ -32,7 +32,7 @@ public class LoginPage {
 	@FindBy(name = "btnReset")
 	WebElement resetButton;
 
-	@FindBy(css = "body > div:nth-child(5) > h2")
+	@FindBy(css = "h2.barone")
 	WebElement loginPageTitle;
 
 	public LoginPage(WebDriver driver) {
