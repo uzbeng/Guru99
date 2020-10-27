@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	WebDriver driver;
+	String name = "Name example";
 
 	@FindBy(css = "h2[class='barone']")
 	WebElement usrNameBoxTitle;
